@@ -9,11 +9,11 @@ const Steps = ({ currentStep }) => {
     <div className="steps">
       <div className={`step ${currentStep >= 0 ? "active" : ""}`}>
         <AiOutlineUser />
-        <p>Personal Information</p>
+        <p>Personal Info.</p>
       </div>
       <div className={`step ${currentStep >= 1 ? "active" : ""}`}>
         <AiOutlineStar />
-        <p>Address Information</p>
+        <p>Address Info.</p>
       </div>
       <div className={`step ${currentStep >= 2 ? "active" : ""}`}>
         <FiSend />

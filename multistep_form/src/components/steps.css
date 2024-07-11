@@ -1,12 +1,13 @@
 .steps {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    max-width: 95%; 
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
     margin-bottom: 2rem;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
 }
 
 .steps::after {
@@ -28,7 +29,7 @@
 }
 
 .step svg {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0.2rem;
 }
 
