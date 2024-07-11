@@ -1,0 +1,21 @@
+.review-container{
+    align-items: center;
+    height: 300px;
+}
+
+.review-container p{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: rgb(66, 66, 66);
+}
+
+.review-container h2{
+    margin-bottom: 1rem;
+
+}
+
+.review-data span{
+    font-weight: bold;
+
+}
