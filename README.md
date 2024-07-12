@@ -16,7 +16,7 @@
 ## Installation
 To run this portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/AmaamRizvi/MultiStep-Form`
+1. Clone the repository: `git clone https://github.com/AmaamRizvi/Mohd_Amaam_Rizvi-MultiStep-Form`
 2. Navigate to the project directory: `cd multistep_form`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
