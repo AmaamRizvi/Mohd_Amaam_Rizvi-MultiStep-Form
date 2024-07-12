@@ -1,8 +1,14 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
-const userForm = ({data, updateFieldHandler}) => {
+const userForm = ({ data, updateFieldHandler }) => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="form-control">
         <label htmlFor="name">Name</label>
         <input
@@ -21,7 +27,7 @@ const userForm = ({data, updateFieldHandler}) => {
           type="email"
           name="email"
           id="email"
-          placeholder="Enter your mail"
+          placeholder="Enter your email"
           required
           value={data.email || ""}
           onChange={(e) => updateFieldHandler("email", e.target.value)}
@@ -39,8 +45,8 @@ const userForm = ({data, updateFieldHandler}) => {
           onChange={(e) => updateFieldHandler("phone", e.target.value)}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default userForm
+export default userForm;

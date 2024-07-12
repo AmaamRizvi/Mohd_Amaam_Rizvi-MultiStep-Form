@@ -1,25 +1,33 @@
-import './review.css'
+import React from "react";
+import { motion } from "framer-motion";
+import "./review.css";
 
-const review = ({data}) => {
+const Review = ({ data }) => {
   return (
-    <div className="review-container">
-      <h2>Confimation</h2>
-      <p>Thanks for signing up in our website.</p>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+      className="review-container"
+    >
+      <h2>Confirmation</h2>
+      <p>Thanks for signing up on our website.</p>
       <p>Your account has been created successfully.</p>
       <p>You can review your information here.</p>
       <div className="review-data">
         <span>
-          Personal Information:{data.name} , {data.email} , {data.phone}.
+          Personal Information: {data.name}, {data.email}, {data.phone}.
         </span>
       </div>
       <div className="review-data">
         <span>
-          Address Information:{data.addressLine1} , {data.addressLine2} ,
-          {data.city} , {data.state} , {data.zipcode}
+          Address Information: {data.addressLine1}, {data.addressLine2},{" "}
+          {data.city}, {data.state}, {data.zipCode}
         </span>
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
 
-export default review
+export default Review;

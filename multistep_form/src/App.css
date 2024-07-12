@@ -77,3 +77,10 @@ textarea{
     background-color: rgb(50, 250, 50);
 }
 
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+
