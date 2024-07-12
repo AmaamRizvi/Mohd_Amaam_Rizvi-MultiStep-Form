@@ -12,6 +12,7 @@
 - Style-Components: A CSS framework for creating responsive and mobile-first designs.
 - Git: A version control system for tracking changes and collaborating on projects.
 - Netlify: A platform for hosting and deploying web applications.
+- Framer Motion: It powers the amazing animations and interactions in Framer, the web builder for creative pros.
 
 ## Installation
 To run this portfolio locally, follow these steps:
